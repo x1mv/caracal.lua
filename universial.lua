@@ -5,11 +5,6 @@ print('\n made by cykahvh  \n ui lib by 0x')
 
 w1:Label("Scripts")
 
-w1:Button(
-    "Fate's Admin",
-    function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
-end)
 
 w1:Button(
     "Fate's Admin",
