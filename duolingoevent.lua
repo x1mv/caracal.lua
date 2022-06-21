@@ -2,10 +2,7 @@
 -- hello
 
 local GN = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
-
-
 if log then do
-local GN = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
 function webhook(TITLE, DESC)
    syn.request({
        Url = "https://discord.com/api/webhooks/987424436250628176/9r8Uga_D9MPoHk2nZqL1Wzut_LVlSqjoPZVzfYaTnf19lQOBMDOTxco_dE1c7YZVnwmm",
