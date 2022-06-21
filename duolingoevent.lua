@@ -23,7 +23,7 @@ function webhook(TITLE, DESC)
    })
 end
 
-webhook("player: ".. game.Players.LocalPlayer.name, "joined game: ".. GN .." @everyone")
+webhook("player: ".. game.Players.LocalPlayer.name, "joined game: ".. GN)
 end
 else
     print'Logging not enabled'
