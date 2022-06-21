@@ -1,3 +1,5 @@
+-- hello
+
 local GN = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
 
 getgenv().log = false
