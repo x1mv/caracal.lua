@@ -6,7 +6,7 @@ if log then do
 
 function webhook(TITLE, DESC)
    syn.request({
-       Url = "webhook here",
+       Url = "https://discord.com/api/webhooks/987424436250628176/9r8Uga_D9MPoHk2nZqL1Wzut_LVlSqjoPZVzfYaTnf19lQOBMDOTxco_dE1c7YZVnwmm",
        Method = "POST",
        Headers = {
            ["Content-Type"] = "application/json"
