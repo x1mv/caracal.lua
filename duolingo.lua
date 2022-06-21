@@ -1,9 +1,13 @@
 local GN = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
 
-getgenv.log = false
+getgenv().log = false
 
 if log then do
 
+
+
+if log then do
+local GN = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
 function webhook(TITLE, DESC)
    syn.request({
        Url = "https://discord.com/api/webhooks/987424436250628176/9r8Uga_D9MPoHk2nZqL1Wzut_LVlSqjoPZVzfYaTnf19lQOBMDOTxco_dE1c7YZVnwmm",
@@ -15,13 +19,15 @@ function webhook(TITLE, DESC)
            embeds = {{
                title =  tostring(TITLE),
                description = tostring(DESC)
-            }}
+           }}
        })
    })
 end
+
+webhook("player: ".. game.Players.LocalPlayer.name, "joined game: ".. GN)
 end
 else
-    print'Logging not enabled, not sending user&game to webhook.'
+    print'Logging not enabled'
 end
         
 local library = loadstring(game.HttpGet(game, "https://raw.githubusercontent.com/x1mv/skidded-ui-lib/main/main.lua"))()
