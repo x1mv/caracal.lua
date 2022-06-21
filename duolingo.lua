@@ -1,3 +1,29 @@
+local GN = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
+
+getgenv.log = false
+
+if log then do
+
+function webhook(TITLE, DESC)
+   syn.request({
+       Url = "webhook here",
+       Method = "POST",
+       Headers = {
+           ["Content-Type"] = "application/json"
+       },
+       Body = game:GetService("HttpService"):JSONEncode({
+           embeds = {{
+               title =  tostring(TITLE),
+               description = tostring(DESC)
+            }}
+       })
+   })
+end
+end
+else
+    print'Logging not enabled, not sending user&game to webhook.'
+end
+        
 local library = loadstring(game.HttpGet(game, "https://raw.githubusercontent.com/x1mv/skidded-ui-lib/main/main.lua"))()
 
 local w1 = library:Window("Duolingo | caracal.lua") -- Text
