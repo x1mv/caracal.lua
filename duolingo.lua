@@ -3,10 +3,6 @@ local GN = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Na
 getgenv().log = false
 
 if log then do
-
-
-
-if log then do
 local GN = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
 function webhook(TITLE, DESC)
    syn.request({
