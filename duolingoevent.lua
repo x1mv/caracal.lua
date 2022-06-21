@@ -3,7 +3,6 @@
 
 local GN = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
 
-getgenv().log = false
 
 if log then do
 local GN = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
