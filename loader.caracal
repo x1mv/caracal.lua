@@ -43,6 +43,7 @@ elseif game.PlaceId == 6498452578 then do
 	print'Game Not Supported'
 end
 rconsoleprint("- status: loaded. -")
+rconsoleprint("please DM any suggestions / bugs to cykahvh#8656, or e-mail ciahaters@gmail.com (yes, i know, nobody uses e-mail, but just incase lol) \n")
 wait(10.4)
 rconsoleprint("\n \n")
 rconsoleprint("@@BLUE@@")
