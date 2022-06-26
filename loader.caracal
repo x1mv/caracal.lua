@@ -1,0 +1,44 @@
+--[[
+(v0.1 Update Logs)
+- Finally released! :D
+- Currently comes with 3 games.
+- Airsoft 3
+- Rate My Avatar (interesting name if you load the script)
+- Dogecoin Mining Tycoon
+- Also, has universial, although it's really basic. 
+- Universial feature list:
+- Walkspeed, Fate's admin, Infinite Yield Admin, and Kick yourself.
+That's it for now, thank you for using my script!
+--]]
+
+local GN = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
+loadstring(game:HttpGet("https://raw.githubusercontent.com/x1mv/caracal.lua/main/introsequence.lua"))()
+rconsoleprint("\n")
+rconsoleprint('@@RED@@')
+wait(1)
+rconsoleprint('- status: checking for game id... - \n')
+wait(0.4)
+if game.PlaceId == 6708206173 then do -- rate my avatar
+        rconsoleprint('- game found: "'.. GN ..'", loading... - \n')
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/x1mv/caracal.lua/main/ratemyavatar.lua"))()
+end
+elseif game.PlaceId == 6542731310 then do -- dogecoin mining tycoon
+    rconsoleprint('- game found: "'.. GN ..'", loading... - \n')
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/x1mv/caracal.lua/main/dcmt.lua"))()
+    end
+elseif game.PlaceId == 6498452578 then do
+    rconsoleprint('- game found: "'.. GN ..'", loading... - \n') -- airsoft 3
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/x1mv/caracal.lua/main/airsoft3.lua"))()
+    end
+		else
+    messagebox('no game found.', 'caracal.lua', 0)
+	rconsoleprint('- game not supported. loading universal... - \n') -- universal lol
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/x1mv/caracal.lua/main/universial.lua"))()
+	print'Game Not Supported'
+end
+rconsoleprint("- status: loaded. -")
+wait(10.4)
+rconsoleprint("\n \n")
+rconsoleprint("@@BLUE@@")
+rconsoleprint("full source of the hub on my github (unobfuscated, i'm not a pussy) \n")
+rconsoleprint("github.com/x1mv \n \n \n \n \n \n \n -- made by x1mv/cykahvh --")
