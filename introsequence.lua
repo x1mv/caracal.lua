@@ -25,5 +25,5 @@ rconsoleprint('a')
 wait(0.2)
 rconsoleprint(' ')
 wait(0.2)
-rconsoleprint('-')
+rconsoleprint('- \n')
 
