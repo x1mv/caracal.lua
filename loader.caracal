@@ -9,6 +9,12 @@
 - Universial feature list:
 - Walkspeed, Fate's admin, Infinite Yield Admin, and Kick yourself.
 That's it for now, thank you for using my script!
+
+Credits to:
+0x37 for: UI library
+cykahvh / x1mv for: basically the entire script
+Also, some other people for some small stuff I got from v3rmillion lol.
+
 --]]
 
 local GN = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
